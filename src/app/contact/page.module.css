@@ -1,5 +1,4 @@
-.container {
-}
+.container {}
 
 .title {
   font-size: 60px;
@@ -24,10 +23,16 @@
   /* animation: move 3s infinite ease alternate; */
 }
 
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+}
+
 @keyframes move {
   from {
     transform: translateY(-15px);
   }
+
   to {
     transform: translateY(0px) scale(1.03);
   }

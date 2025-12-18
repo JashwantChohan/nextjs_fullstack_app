@@ -2,8 +2,19 @@
     padding: 20px;
     cursor: pointer;
     background-color: #53c28b;
-    border: none;
+    border: 1px solid black;
     border-radius: 5px;
     width: max-content;
     color: white;
+}
+
+.authbutton {
+    padding: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: max-content;
+    color: black;
+    margin-right: 10px;
 }

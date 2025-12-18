@@ -3,9 +3,10 @@ import styles from './page.module.css'
 import Image from 'next/image'
 import Button from '@/components/Button/Button'
 
+
 export const metadata = {
-  title: "Nextify | Contact",
-  description: "Nextify app",
+    title: "Nextify | Contact",
+    description: "Nextify app",
 };
 
 const Contact = () => {
@@ -25,7 +26,9 @@ const Contact = () => {
                     <input type="text" placeholder='Name' className={styles.input} />
                     <input type="text" placeholder='email' className={styles.input} />
                     <textarea className={styles.textArea} placeholder='message' cols="30" rows="10"></textarea>
-                    <Button url="#" text="Send" />
+                    <div className={styles.buttonContainer}>
+                        <Button url="#" text="Send" />
+                    </div>
                 </form>
             </div>
         </div>
