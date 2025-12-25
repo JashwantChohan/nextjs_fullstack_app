@@ -19,16 +19,14 @@ export const GET = async (request) => {
 }
 
 export const POST = async (request) => {
-    const body = await request.json()
-
-    const newPost = new Post(body)
-
     try {
+        const body = await request.json()
         await connect();
 
-        await newPost().save()
+        const newPost = new Post(body)
+        await newPost.save()
 
-        return new NextResponse("Post has been created", { status: 200 });
+        return new NextResponse("Post has been created", { status: 201 });
     } catch (err) {
         return new NextResponse("Database Error", { status: 500 });
     }
